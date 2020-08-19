@@ -1,0 +1,35 @@
+<%- include('./src/header'); %>
+<%- include('./src/sidebar'); %>
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card shadow-none overflow-hidden">
+                                    <div class="card-body bg-gradient3">
+                                        <div class="">
+                                            <div class="card-icon">
+                                                <i class="fa fa-briefcase"></i>
+                                            </div>
+                                            <h2 class="font-weight-bold text-white"><%= find_operating.length%></h2>
+                                            <p class="text-white mb-0 font-16">Onay Bekleyen İşletme Sayısı</p>                                            
+                                        </div>
+                                    </div><!--end card-body-->
+                                </div><!--end card-->
+                            </div><!--end col-->
+                            <div class="col-lg-4">
+                                <div class="card shadow-none  overflow-hidden">
+                                    <div class="card-body bg-gradient2">
+                                        <div class="">
+                                            <div class="card-icon">
+                                                <i class="far fa-comment"></i>
+                                            </div>
+                                            <h2 class="font-weight-bold text-white"><%= find_feedback.length%></h2>
+                                            <p class="text-white mb-0 font-16">Yeni Gelen Bildirimler</p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- container -->
+                </div>
+<%- include('./src/footer'); %>
